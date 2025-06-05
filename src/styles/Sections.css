@@ -1,0 +1,234 @@
+/* styles/Sections.css */
+.section {
+  padding-top: 60px;
+  color: #eee;
+}
+
+.section-title {
+  font-size: 3vw;
+  margin-bottom: 40px;
+  color: #eee;
+}
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 30vh;
+  gap: 20vh;
+  background-image: url(../assets/profile.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: 30px;
+}
+
+.home-section-title {
+  width: 28.8vw;
+  height: 14vw;
+  font-size: 4vw;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+}
+
+.home-section-title-blue {
+  color: #14B6D4;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.section-about-text {
+  width: 50%;
+  font-size: 1.3vw;
+  text-align: justify;
+}
+
+.section-about-skils {
+  width: 50%;
+  max-height: 700px;
+  max-width: 500px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #14B6D4;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+}
+
+.project-item a {
+  display: flex;
+  flex-direction: column;
+  
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.project-item a:hover {
+  transform: scale(1.05);
+}
+
+.project-item img {
+  max-width: 22.7vw;
+  border-radius: 12px;
+}
+
+.project-item h3 {
+  font-size: 1.2vw;
+}
+
+
+.home-section h1 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.home-section h1 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contacts-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.contacts a {
+  color: white;
+  font-size: 32px;
+  transition: color 0.3s;
+}
+
+.contacts a:hover {
+  color: #14B6D4;
+}
+
+.email {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.email:hover {
+  color: #14B6D4;
+}
+
+
+footer {
+      background-color: #101416;
+      padding: 0 15vw;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      box-shadow: 0 -4px 20px rgba(20, 182, 212, 0.1);
+    }
+
+    .footer-name {
+      display: flex;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-top: 20px;
+    }
+
+    .footer-menu {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;  
+      margin-left: auto;
+    }
+
+    .footer-menu a {
+      color: #eee;
+      text-decoration: none;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .footer-menu a:hover {
+      color: #14B6D4;
+    }
+
+    .footer-icons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-icons a {
+      color: #eee;
+      font-size: 22px;
+      transition: color 0.3s;
+    }
+
+    .footer-icons a:hover {
+      color: #14B6D4;
+    }
+
+    .footer-email {
+      font-size: 16px;
+      color: #eee;
+      transition: color 0.3s;
+      text-decoration: none;
+    }
+
+    .footer-email:hover {
+      color: #14B6D4;
+    }
+
+    @media (max-width: 600px) {
+      .footer-menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }

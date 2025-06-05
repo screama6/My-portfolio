@@ -1,0 +1,44 @@
+/* Сброс отступов и границ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Базовые стили для body */
+body {
+  font-family: 'Inter', sans-serif, Arial, sans-serif;
+  background-color: #101416;
+  color: #eee;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+/* Ссылки */
+a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #14B6D4;
+  outline: none;
+}
+
+/* Кнопки */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Убрать скролл при открытом мобильном меню */
+body.no-scroll {
+  overflow: hidden;
+}

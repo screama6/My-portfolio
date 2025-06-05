@@ -1,0 +1,49 @@
+/* styles/App.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #101416;
+  color: #eee;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 15vw 0 15vw;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+button.btn-contact {
+  padding: 20px 40px;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #14B6D4;
+  background-color: transparent;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+button.btn-contact:hover,
+button.btn-contact:focus {
+  border-color: #14B6D4;
+  transform: scale(1.05);
+}
+
+button.btn-contact:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,36 @@
+/* Animations.css */
+
+/* Исходное состояние для элементов, которые должны появляться с анимацией */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Когда элемент становится видимым (добавляется класс .visible) */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Дополнительно можно сделать анимацию для кнопок, ссылок и т.д. */
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: slideInFromLeft;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+
